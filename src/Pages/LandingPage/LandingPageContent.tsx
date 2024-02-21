@@ -1,8 +1,18 @@
-import { IconArrowBigRightLines, IconClock, IconTableColumn } from "@tabler/icons-react";
+import {
+  IconArrowBigRightLines,
+  IconAugmentedReality2,
+  IconBrandOpenSource,
+  IconClock,
+  IconTerminal2,
+} from "@tabler/icons-react";
 import { TextHighlight } from "../../components/ui/text-highlight";
-import { SkeletonOne, SkeletonTwo } from "./Skeletons";
-
-
+import {
+  SkeletonFive,
+  SkeletonFour,
+  SkeletonOne,
+  SkeletonThree,
+  SkeletonTwo,
+} from "./Skeletons";
 
 //CardStack Items (What inspired us to create spito?)
 
@@ -28,10 +38,9 @@ const cardsContent = [
     designation: "cooligus",
     content: (
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        <TextHighlight>
-          Soluta incidunt, quos, quas, quidem quibusdam quia quae voluptates
-        </TextHighlight>
+        I want to create kind of control panel for Linux that would be very
+        flexible and would support as many PCs as possible.
+        <TextHighlight>Without spito it's almost impossible.</TextHighlight>
       </p>
     ),
     image: "https://avatars.githubusercontent.com/u/67282004?s=70&v=4",
@@ -42,11 +51,16 @@ const cardsContent = [
     name: "Seweryn Pajor",
     designation: "sewe2000",
     content: (
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <p className="text-sm">
+        I know a lot of people, especially beginners have trouble configuring
+        GNU/Linux systems.
         <TextHighlight>
-          Soluta incidunt, quos, quas, quidem quibusdam quia quae voluptates
+          Personally I am a huge fan of Open Source and GNU/Linux. I wanted to
+          share my passion with other people.
         </TextHighlight>
+        This passion inspired me to participate in the spito project which
+        hopefully, will bring more people into the GNU/Linux and save their
+        precious time and nerves. Enjoy!
       </p>
     ),
     image: "https://avatars.githubusercontent.com/u/59435262?s=70&v=4",
@@ -58,9 +72,10 @@ const cardsContent = [
     designation: "maxidragon",
     content: (
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        I always wanted to configure the system according to my needs,
+        but it always took a lot of time.
         <TextHighlight>
-          Soluta incidunt, quos, quas, quidem quibusdam quia quae voluptates
+          With spito, it only takes a few minutes instead of hours.
         </TextHighlight>
       </p>
     ),
@@ -85,8 +100,6 @@ const cardsContent = [
   },
 ];
 
-
-
 //Bento Grid Items (Why spito?)
 
 const gridItems = [
@@ -106,7 +119,7 @@ const gridItems = [
     title: "Simplicity",
     description: (
       <span className="text-sm">
-        You don't need to have a deep knowledge to configure your system.
+        You don't need to be a rocket scientist to use linux.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -114,44 +127,40 @@ const gridItems = [
     icon: <IconArrowBigRightLines className="h-4 w-4 text-neutral-500" />,
   },
   {
-    //open source
-    title: "Configuration Time",
+    title: "Open Source",
     description: (
       <span className="text-sm">
-        Using spito you can save time you would spend on configuring your
-        system.
+        As you could expect, spito is open source and free to use for everyone.
       </span>
     ),
-    header: <SkeletonOne />,
+    header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconBrandOpenSource className="h-4 w-4 text-neutral-500" />,
   },
   {
-    //technologie bo mam miejsca dużo (go, lua)
-    title: "Configuration Time",
+    title: "Technologies",
     description: (
       <span className="text-sm">
-        Using spito you can save time you would spend on configuring your
-        system.
+        When designing Spito, we thought about technologies that are reliable
+        but also easy to understand for potential contributors. This is how the
+        choice fell on Go and Lua.
       </span>
     ),
-    header: <SkeletonOne />,
+    header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconAugmentedReality2 className="h-4 w-4 text-neutral-500" />,
   },
   {
-    //lepszy bash
-    title: "Configuration Time",
+    title: 'Better "Bash"',
     description: (
       <span className="text-sm">
-        Using spito you can save time you would spend on configuring your
-        system.
+        I wasn't provided with a description for this item.
       </span>
     ),
-    header: <SkeletonOne />,
+    header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconTerminal2 className="h-4 w-4 text-neutral-500" />,
   },
 ];
 
-export {cardsContent, gridItems}
+export { cardsContent, gridItems };
