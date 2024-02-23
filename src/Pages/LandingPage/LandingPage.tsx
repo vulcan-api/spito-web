@@ -329,7 +329,7 @@ export default function LandingPage(): JSX.Element {
           <img
             src="https://placehold.co/500x281"
             alt="Spito-gui's screenshot"
-            className="border-2 border-primary rounded-lg w-[500px] aspect-video shadow-lg"
+            className="rounded-lg w-[500px] aspect-video shadow-lg"
           />
         </motion.div>
       </motion.div>

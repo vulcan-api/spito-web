@@ -3,6 +3,7 @@ import Header from "./Layout/Header";
 import { ThemeProvider } from "./components/theme-provider";
 import { cloneElement } from "react";
 import LandingPage from "./Pages/LandingPage/LandingPage";
+import Footer from "./Layout/Footer";
 
 export default function App(): JSX.Element | null {
   const element = useRoutes([
@@ -27,6 +28,7 @@ export default function App(): JSX.Element | null {
     <ThemeProvider>
       <Header />
       {cloneElement(element, { key: location.pathname })}
+      <Footer />
     </ThemeProvider>
   );
 }
