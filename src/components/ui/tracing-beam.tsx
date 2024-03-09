@@ -62,7 +62,7 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative w-full h-fit py-32 flex flex-col items-center", className)}
     >
-      <div className="absolute left-[20%] top-16">
+      <div className="absolute left-[5%] 2xl:left-[15%] top-16 lg:block hidden">
         <motion.div
           transition={{
             duration: 0.2,

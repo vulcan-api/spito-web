@@ -35,7 +35,7 @@ const SkeletonOne = (): JSX.Element => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] bg-dot-slate-400 rounded-lg flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] bg-dot-slate-400 rounded-lg flex-col md:py-0 py-8 space-y-2"
     >
       <motion.div className="w-32 h-32 border-4 m-auto rounded-full border-primary/[0.8] dark:border-white dark:bg-gray-800 bg-neutral-100 relative">
         <motion.div
@@ -64,7 +64,7 @@ const SkeletonTwo = (): JSX.Element => {
 
 const SkeletonThree = (): JSX.Element => {
   return (
-    <div className="flex-1 selection:bg-transparent flex font-semibold items-center justify-center w-full h-full min-h-[6rem] bg-dot-slate-400 rounded-lg flex-col grayscale-[60%] hover:grayscale-0 transition-all hover:scale-105 duration-500 text-green-400 font-rubik">
+    <div className="flex-1 selection:bg-transparent flex font-semibold items-center justify-center w-full h-full min-h-[6rem] bg-dot-slate-400 rounded-lg flex-col grayscale-[60%] hover:grayscale-0 transition-all hover:scale-105 duration-500 text-green-400 font-rubik py-6">
       <img src={OpenSouceIcon} alt="Open Source Icon" className="w-28 h-28" />
       <p>
         <span className="font-extrabold">Open</span> Source
@@ -135,7 +135,7 @@ const SkeletonFour = (): JSX.Element => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex-1 flex items-center justify-evenly w-full h-full min-h-[6rem] bg-dot-slate-400 rounded-lg selection:bg-transparent"
+      className="flex-1 flex sm:flex-row flex-col gap-8 py-8 items-center justify-evenly w-full h-full min-h-[6rem] bg-dot-slate-400 rounded-lg selection:bg-transparent"
     >
       {
         // GOLANG Logo
@@ -205,7 +205,7 @@ const SkeletonFive = (): JSX.Element => {
     <motion.div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="flex flex-1 w-full h-full items-center selection:bg-transparent justify-center min-h-[6rem] bg-dot-slate-400 rounded-lg hover:scale-105 transition-all duration-500"
+      className="flex flex-1 w-full h-full items-center py-8 selection:bg-transparent justify-center min-h-[6rem] bg-dot-slate-400 rounded-lg hover:scale-105 transition-all duration-500"
     >
       <p className="text-9xl font-poppins">&gt;</p>
       <p

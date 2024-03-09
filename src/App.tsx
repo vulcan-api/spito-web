@@ -4,6 +4,8 @@ import { ThemeProvider } from "./components/theme-provider";
 import { cloneElement } from "react";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import Footer from "./Layout/Footer";
+import Download from "./Pages/Download/Download";
+import Marketplace from "./Pages/Marketplace/Marketplace";
 
 export default function App(): JSX.Element | null {
   const element = useRoutes([
@@ -13,11 +15,11 @@ export default function App(): JSX.Element | null {
     },
     {
       path: "download",
-      element: <div>download</div>,
+      element: <Download />,
     },
     {
       path: "marketplace",
-      element: <div>marketplace</div>,
+      element: <Marketplace />,
     },
   ]);
 
