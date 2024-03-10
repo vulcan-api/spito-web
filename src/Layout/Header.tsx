@@ -26,7 +26,7 @@ export default function Header(): JSX.Element {
                 to="/marketplace"
                 className={({ isActive }) =>
                   cn(
-                    "text-foreground/60 hover:text-foreground/80 transition-colors",
+                    "text-foreground/60 hover:text-foreground/80 transition-colors sm:block hidden",
                     isActive && "text-foreground hover:text-foreground"
                   )
                 }
@@ -37,7 +37,7 @@ export default function Header(): JSX.Element {
                 to="/download"
                 className={({ isActive }) =>
                   cn(
-                    "text-foreground/60 hover:text-foreground/80 transition-colors",
+                    "text-foreground/60 hover:text-foreground/80 transition-colors sm:block hidden",
                     isActive && "text-foreground hover:text-foreground"
                   )
                 }

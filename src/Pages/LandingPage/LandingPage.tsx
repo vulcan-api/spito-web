@@ -11,6 +11,7 @@ import {
   IconCircleNumber3,
 } from "@tabler/icons-react";
 import { Spotlight } from "@/components/ui/Spotlight";
+import guiScreenshot from "./assets/spito_gui_screenshot.png";
 
 export default function LandingPage(): JSX.Element {
   const drawLineOne = {
@@ -45,7 +46,7 @@ export default function LandingPage(): JSX.Element {
 
   return (
     <div className="flex flex-col">
-      <div className="w-screen h-screen flex flex-col items-center justify-center gap-8 bg-dot-sky-400/[0.4]">
+      <div className="w-screen h-screen flex flex-col items-center justify-center gap-8 bg-dot-sky-400/[0.4] relative">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           animate={{
@@ -327,9 +328,9 @@ export default function LandingPage(): JSX.Element {
             in a more friendly way.
           </p>
           <img
-            src="https://placehold.co/500x281"
+            src={guiScreenshot}
             alt="Spito-gui's screenshot"
-            className="rounded-lg w-[500px] aspect-video shadow-lg"
+            className="rounded-lg w-[500px] aspect-video shadow-lg border"
           />
         </motion.div>
       </motion.div>

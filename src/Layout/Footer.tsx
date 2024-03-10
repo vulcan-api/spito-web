@@ -3,7 +3,7 @@ import Logo from "/logo.svg";
 export default function Footer(): JSX.Element {
   return (
     <footer className="border-t-2">
-      <div className="container flex justify-between p-4 max-w-screen-2xl font-poppins text-muted-foreground">
+      <div className="container flex flex-col sm:flex-row gap-8 justify-between p-4 max-w-screen-2xl font-poppins text-muted-foreground">
         <div className="flex flex-col gap-4">
           <p>
             <a
