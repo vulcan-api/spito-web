@@ -30,9 +30,9 @@ export default function LandingPage(): JSX.Element {
   };
 
   const drawLineTwo = {
-    hidden: { width: "48px", opacity: 0 },
+    hidden: { width: "5%", opacity: 0 },
     visible: {
-      width: "35%",
+      width: "40%",
       opacity: 1,
       transition: {
         width: { duration: 2, delay: 1 },
