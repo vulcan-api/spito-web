@@ -23,9 +23,9 @@ const cardsContent = [
     designation: "BaderBC",
     content: (
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        My motivation for developing Spito stemmed from the recognition of Linux's strengths, such as privacy and performance, coupled with the desire to address its complexity.
         <TextHighlight>
-          Soluta incidunt, quos, quas, quidem quibusdam quia quae voluptates
+          I saw an opportunity to enhance Linux by introducing simplicity through spito.
         </TextHighlight>
       </p>
     ),
