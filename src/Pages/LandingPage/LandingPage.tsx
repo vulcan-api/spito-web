@@ -181,12 +181,7 @@ export default function LandingPage(): JSX.Element {
           </motion.div>
         </div>
         <p className="text-lg sm:text-xl tracking-tighter text-muted-foreground font-rubik drop-shadow-md sm:w-1/2 px-4 text-center">
-          {
-            // Here we provide description showing how much time is saved by using spito
-          }
-          We did research, bla bla bla, and we found out that spito is 3 times
-          faster than manual configuration. It's like magic. The source is the
-          hair of Pazdan and also that I made it up.
+          Considering Hyprland, we found that using Spito reduced setup time from at least an hour to just about 5 minutes. Isn't it impressive?
         </p>
       </motion.div>
       <TracingBeam className="bg-dot-slate-400/[0.4] dark:bg-dot-slate-100/[0.2]">
