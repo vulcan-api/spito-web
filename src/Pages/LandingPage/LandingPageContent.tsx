@@ -154,7 +154,7 @@ const gridItems = [
     title: 'Better "Bash"',
     description: (
       <span className="text-sm">
-        I wasn't provided with a description for this item.
+        Spito gives you possibilities, bash can't - dependencies.
       </span>
     ),
     header: <SkeletonFive />,
